@@ -1,13 +1,39 @@
 package com.dinj.docclinic;
 
+import com.dinj.docclinic.legacy.controller.DbController;
+import com.dinj.docclinic.legacy.controller.DevController;
+import com.dinj.docclinic.legacy.controller.I18nController;
+import com.dinj.docclinic.legacy.controller.inject.ConstructorInjectController;
+import com.dinj.docclinic.legacy.controller.inject.PropertyInjectController;
+import com.dinj.docclinic.legacy.controller.inject.SetterInjectController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class DocClinicApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(DocClinicApplication.class, args);
-    }
+    /*
+        ApplicationContext context = SpringApplication.run(DocClinicApplication.class, args);
+        DevController controller = (DevController) context.getBean("devController");
+        I18nController i18nController = (I18nController) context.getBean("i18nController");
+        i18nController.getService();
 
+        PropertyInjectController propertyInjectController = (PropertyInjectController) context.getBean("propertyInjectController");
+        propertyInjectController.getService();
+
+        SetterInjectController setterInjectController = (SetterInjectController) context.getBean("setterInjectController");
+        setterInjectController.getService();
+
+        ConstructorInjectController constructorInjectController = (ConstructorInjectController) context.getBean("constructorInjectController");
+        constructorInjectController.getService();
+
+        System.out.println("--------------------------");
+        DbController dbController = (DbController) context.getBean("dbController");
+        dbController.serviceInfo();
+     */
+
+    public static void main(String[] args) {
+
+    }
 }
