@@ -2,7 +2,7 @@ package com.dinj.docclinic.current.model;
 
 import java.time.LocalDate;
 
-public class Patient {
+public class Patient extends BaseEntity {
 
     private Relative relative;
     private PatientType patientType;
