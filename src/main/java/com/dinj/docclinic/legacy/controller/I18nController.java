@@ -9,7 +9,7 @@ public class I18nController {
 
     private final iDevService devService;
 
-    public I18nController(@Qualifier("I18nService") iDevService devService) {
+    public I18nController(@Qualifier("i18nService") iDevService devService) {
         this.devService = devService;
     }
 
